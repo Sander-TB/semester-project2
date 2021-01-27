@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/til1svo.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Current Computers</title>
+</head>
+
+<body>
+
+  <div class="nav__small-banner tracking-widest uppercase">
+    <p>Free shipping worldwide</p>
+  </div>
+
+  <nav class="nav tracking-widest">
+    <div class="nav__search-container px-8">
+      <input type="search" placeholder="Search" class="nav__search uppercase">
+    </div>
+    <div class="nav__logo-container">
+      <a href="index.html">
+        <img src="./img/logo.svg" class="logo-img" alt="Current Level's logo">
+      </a>
+    </div>
+    <div class="nav__navigation">
+      <ul class="nav__ul px-8">
+        <li class="nav__list-item cursonr-pointer scale">
+          <a href="customer_login.html">
+            <i class="fas fa-user icon__user"></i>
+            <p class="uppercase">Log In</p>
+          </a>
+        </li>
+        <li class="nav__list-item cursor-pointer scale">
+          <a href="cart.html">
+            <i class="fas fa-shopping-bag icon__bag"></i>
+            <p class="uppercase">Bag</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="nav__logo-text cursor-pointer tracking-widest">
+    <a href="index.html">
+      <h1 class="uppercase">Current Level</h1>
+    </a>
+  </div>
+
+  <div class="admin__login">
+    <h1 class="uppercase mt-8">Log In to get exclusive deals</h1>
+    <p class="admin__text">Please enter valid email and password</p>
+    <form class="admin__form" id="customerLogin">
+      <input type="text" placeholder="First Name" class="admin__input" id="firstName">
+      <p class="form__error" id="firstNameError">Minimum 2 characters</p>
+      <input type="text" placeholder="Last Name" class="admin__input" id="lastName">
+      <p class="form__error" id="lastNameError">Minimum 4 characters</p>
+      <input type="email" placeholder="Email" class="admin__input" id="email">
+      <p class="form__error" id="emailError">Please enter valid email</p>
+      <input type="password" placeholder="Password" class="admin__input" id="password">
+      <p class="form__error" id="passwordError">Minimum 8 characters long</p>
+      <button class="button button__medium button__admin button__black uppercase mb-52 login__submit ">Log
+        in</button>
+    </form>
+  </div>
+
+
+  <footer class="footer">
+    <ul class="footer__ul">
+      <li class="footer__headings uppercase">Made by:</li>
+      <li class="footer__small-text py-1">Sander Trollebø Byrkjeland</li>
+      <li class="footer__small-text">Semester Project for <a href="https://www.noroff.no/" target="_blank">Noroff</a>
+      </li>
+    </ul>
+    <ul class="footer__ul">
+      <li class="footer__headings uppercase">Made Possible By:</li>
+      <li class="footer__small-text py-1"><a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a></li>
+      <li class="footer__small-text py-1"><a href="https://strapi.io/" target="_blank">Strapi.io</a></li>
+      <li class="footer__small-text"> <a href="https://cloudinary.com/" target="_blank">Cloudinary.com</a></li>
+    </ul>
+    <ul class="footer__ul">
+      <li class="footer__headings uppercase">Photos From:</li>
+      <li class="footer__small-text py-1"><a href="https://www.pexels.com/" target="_blank">Pexels.com</a></li>
+      <li class="footer__small-text"><a href="https://unsplash.com/" target="_blank">Unsplash.com</a></li>
+    </ul>
+    <ul class="footer__ul">
+      <li class="footer__headings uppercase">Follow Current Level on Social Media</li>
+      <li class="footer__social">
+        <i class="fab fa-snapchat-square"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram"></i>
+      </li>
+    </ul>
+  </footer>
+  <script src="js/components/common/customerLogin.js"></script>
+</body>
+
+</html>

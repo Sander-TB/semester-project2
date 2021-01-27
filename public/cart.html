@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/til1svo.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Current Computers</title>
+</head>
+
+<body>
+
+  <div class="nav__small-banner tracking-widest uppercase">
+    <p>Free shipping worldwide</p>
+  </div>
+
+  <nav class="nav tracking-widest">
+    <div class="nav__search-container px-8">
+      <input type="search" placeholder="Search" class="nav__search uppercase">
+    </div>
+    <div class="nav__logo-container">
+      <a href="index.html">
+        <img src="./img/logo.svg" class="logo-img" alt="Current Level's logo">
+      </a>
+    </div>
+    <div class="nav__navigation"></div>
+  </nav>
+  <div class="nav__logo-text cursor-pointer tracking-widest">
+    <a href="index.html">
+      <h1 class="uppercase">Current Level</h1>
+    </a>
+  </div>
+
+  <div class="in-cart">
+    <div class="in-cart__display">
+      <ul class="in-cart__display-headings">
+        <li class="in-cart__display-heading uppercase">Product</li>
+        <li class="in-cart__display-heading uppercase quantity">Qty</li>
+        <li class="in-cart__display-heading uppercase">Total</li>
+      </ul>
+      <div class="in-cart__outer-box">
+        <div class="in-cart__product-box">
+          <img class="in-cart__image" src="https://via.placeholder.com/200x150" alt="Product">
+          <div class="in-cart__product-box-text">
+            <h4 class="in-cart__product-box-text-heading uppercase">Product Name</h4>
+            <p class="in-cart__product-box-text-price uppercase price" id="price">Price</p>
+          </div>
+        </div>
+        <div class="in-cart__buttons">
+          <input type="number" class="quantity-input">
+          <button class="button__remove tracking-widest uppercase" id="remove">Remove</button>
+        </div>
+        <div class="in-cart__price">
+          <p>Price</p>
+        </div>
+      </div>
+      <div class="in-cart__bottom">
+        <button class="button button__small button__black uppercase">Checkout</button>
+        <div class="in-cart__bottom-text">
+          <p class="in-cart__price-total uppercase tracking-wide">Total: </p>
+          <p class="taxes">Taxes calculated in next step</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <ul class="footer__ul">
+      <li class="footer__headings uppercase">Made by:</li>
+      <li class="footer__small-text py-1">Sander Trollebø Byrkjeland</li>
+      <li class="footer__small-text">Semester Project for <a href="https://www.noroff.no/" target="_blank">Noroff</a>
+      </li>
+    </ul>
+    <ul class="footer__ul">
+      <li class="footer__headings uppercase">Made Possible By:</li>
+      <li class="footer__small-text py-1"><a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a></li>
+      <li class="footer__small-text py-1"><a href="https://strapi.io/" target="_blank">Strapi.io</a></li>
+      <li class="footer__small-text"> <a href="https://cloudinary.com/" target="_blank">Cloudinary.com</a></li>
+    </ul>
+    <ul class="footer__ul">
+      <li class="footer__headings uppercase">Photos From:</li>
+      <li class="footer__small-text py-1"><a href="https://www.pexels.com/" target="_blank">Pexels.com</a></li>
+      <li class="footer__small-text"><a href="https://unsplash.com/" target="_blank">Unsplash.com</a></li>
+    </ul>
+    <ul class="footer__ul">
+      <li class="footer__headings uppercase">Follow Current Level on Social Media</li>
+      <li class="footer__social">
+        <i class="fab fa-snapchat-square"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram"></i>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="js/cart.js" type="module"></script>
+  <script src="js/components/products/addToCart.js" type="module"></script>
+</body>
+
+</html>

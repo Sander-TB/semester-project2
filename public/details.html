@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/til1svo.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Current Computers</title>
+</head>
+
+<body>
+
+  <div class="nav__small-banner tracking-widest uppercase">
+    <p>Free shipping worldwide</p>
+  </div>
+
+  <nav class="nav tracking-widest">
+    <div class="nav__search-container px-8">
+      <input type="search" placeholder="Search" class="nav__search uppercase">
+    </div>
+    <div class="nav__logo-container">
+      <a href="index.html">
+        <img src="./img/logo.svg" class="logo-img" alt="Current Level's logo">
+      </a>
+    </div>
+    <div class="nav__navigation"></div>
+  </nav>
+  <div class="nav__logo-text cursor-pointer tracking-widest">
+    <a href="index.html">
+      <h1 class="uppercase">Current Level</h1>
+    </a>
+  </div>
+
+  <div class="details-container">
+    <div class="details__image">
+      <img src="https://via.placeholder.com/700x500" alt="product">
+    </div>
+    <div class="details__text">
+      <h1 class="details__text-heading tracking-widest uppercase">Product Name</h1>
+      <p class="details__text-subheading">Some Company</p>
+      <div class="details__rating-cartbtn-container">
+        <div class="rating">
+          <div class="rating-stars">
+            <i class="fas fa-star star-yellow"></i>
+            <i class="fas fa-star star-yellow"></i>
+            <i class="fas fa-star star-yellow"></i>
+            <i class="fas fa-star star-yellow"></i>
+            <i class="fas fa-star-half star-yellow"></i>
+          </div>
+          <p class="rating-text"> <a href="#reviews">3 Reviews</a></p>
+        </div>
+
+        <div class="add-to-cart">
+          <p class="add-to-cart-price uppercase">kr 500 nok</p>
+          <div class="add-to-cart-buttons">
+            <div class="add-to-cart-up-down">
+              <input type="number">
+            </div>
+            <button class="button button__medium button__black uppercase" id="addToCart">Add To Cart</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="details__description">
+        <h3 class="details__description-heading uppercase">Description</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, voluptatibus!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="reviews" id="reviews">
+    <h2 class="reviews__heading uppercase"> R<span class="underline">eview</span>s</h2>
+    <div class="rating">
+      <div class="rating-stars">
+        <i class="fas fa-star star-yellow"></i>
+        <i class="fas fa-star star-yellow"></i>
+        <i class="fas fa-star star-yellow"></i>
+        <i class="fas fa-star star-yellow"></i>
+        <i class="fas fa-star-half star-yellow"></i>
+      </div>
+      <p class="rating-text">3 Reviews</p>
+    </div>
+  </div>
+  <ul class="reviews__list grid grid-cols-3 gap-5">
+    <li>
+      <ul class="reviews__list-ul">
+        <li class="review__name uppercase">
+          <p>Name Nameson</p>
+          <div class="review_stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </li>
+        <li class="review__verified uppercase">Verified buyer</li>
+        <li class="review__title">Awesome Product</li>
+        <li class="review__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      </ul>
+    </li>
+    <li>
+      <ul class="reviews__list-ul">
+        <li class="review__name uppercase">
+          <p>Nils Smith</p>
+          <div class="review_stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </li>
+        <li class="review__verified uppercase">Verified buyer</li>
+        <li class="review__title">Cool product</li>
+        <li class="review__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <li class="review__name uppercase">
+          <p>John Doe</p>
+          <div class="review_stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </li>
+        <li class="review__verified uppercase">Verified buyer</li>
+        <li class="review__title">Could be better</li>
+        <li class="review__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      </ul>
+    </li>
+  </ul>
+  </div>
+
+
+  <div class="featured">
+    <h2 class="featured__heading-details tracking-widest uppercase"> F<span class="underline">eatured Product</span>s
+    </h2>
+    <div class="featured__content">
+      <div class="featured__content-box">
+        <h2 class="featured__content-heading uppercase">Smartphone 12</h2>
+        <button class="button button__medium button__white">
+          <a href="products.html">Shop Now</a>
+        </button>
+      </div>
+      <div class="featured__content-box">
+        <h2 class="featured__content-heading uppercase">Wireless earpods</h2>
+        <button class="button button__medium button__white">
+          <a href="products.html">Shop Now</a>
+        </button>
+      </div>
+      <div class="featured__content-box">
+        <h2 class="featured__content-heading uppercase">Wireless Charger</h2>
+        <button class="button button__medium button__white">
+          <a href="products.html">Shop Now</a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <ul class="footer__ul">
+      <li class="footer__headings uppercase">Made by:</li>
+      <li class="footer__small-text py-1">Sander Trollebø Byrkjeland</li>
+      <li class="footer__small-text">Semester Project for <a href="https://www.noroff.no/" target="_blank">Noroff</a>
+      </li>
+    </ul>
+    <ul class="footer__ul">
+      <li class="footer__headings uppercase">Made Possible By:</li>
+      <li class="footer__small-text py-1"><a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a></li>
+      <li class="footer__small-text py-1"><a href="https://strapi.io/" target="_blank">Strapi.io</a></li>
+      <li class="footer__small-text"> <a href="https://cloudinary.com/" target="_blank">Cloudinary.com</a></li>
+    </ul>
+    <ul class="footer__ul">
+      <li class="footer__headings uppercase">Photos From:</li>
+      <li class="footer__small-text py-1"><a href="https://www.pexels.com/" target="_blank">Pexels.com</a></li>
+      <li class="footer__small-text"><a href="https://unsplash.com/" target="_blank">Unsplash.com</a></li>
+    </ul>
+    <ul class="footer__ul">
+      <li class="footer__headings uppercase">Follow Current Level on Social Media</li>
+      <li class="footer__social">
+        <i class="fab fa-snapchat-square"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram"></i>
+      </li>
+    </ul>
+  </footer>
+  <script src="js/details.js" type="module"></script>
+  <script src="js/components/products/addToCart.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/til1svo.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Current Computers</title>
+</head>
+
+<body>
+  <div class="nav__small-banner tracking-widest uppercase">
+    <p>Free shipping worldwide</p>
+  </div>
+
+  <nav class="nav tracking-widest">
+    <div class="nav__search-container px-8">
+      <input type="search" placeholder="Search" class="nav__search uppercase">
+    </div>
+    <div class="nav__logo-container">
+      <a href="index.html">
+        <img src="./img/logo.svg" class="logo-img" alt="Current Level's logo">
+      </a>
+    </div>
+    <div class="nav__navigation"></div>
+  </nav>
+  <div class="nav__logo-text cursor-pointer tracking-widest">
+    <a href="index.html">
+      <h1 class="uppercase">Current Level</h1>
+    </a>
+  </div>
+
+  <div class="products">
+    <div class="products__filter-menu">
+      <ul class="products__filter-menu-ul">
+        <li class="products__filter-menu-li"> <button class="button button__transparent">All products</button></li>
+        <li class="products__filter-menu-li"> <button class="button button__transparent">Laptops</button></li>
+        <li class="products__filter-menu-li"> <button class="button button__transparent">Phones</button></li>
+        <li class="products__filter-menu-li"> <button class="button button__transparent">Headphones</button></li>
+        <li class="products__filter-menu-li"> <button class="button button__transparent">Tablets</button></li>
+        <li class="products__filter-menu-li"> <button class="button button__transparent">Chargers</button></li>
+        <li class="products__filter-menu-li"> <button class="button button__transparent">Keyboards</button></li>
+        <li class="products__filter-menu-li"> <button class="button button__transparent">Watches</button></li>
+        <li class="products__filter-menu-li"> <button class="button button__transparent">Accessories</button></li>
+      </ul>
+
+      <div class="products__filter-menu-lower">
+        <p>9 Items total</p>
+        <p class="uppercase">Free shipping worldwide</p>
+        <div class="products__filter-menu-sorting">
+          <label class="uppercase" for="sorting">Sort By:</label>
+          <select class="products__filter-menu-sorting-select" name="sort-by" id="sortBy">
+            <option class="option" value="Lowest price">Lowest price</option>
+            <option class="option" value="Highest price">Highest price</option>
+            <option class="option" value="Highest price selected">Name</option>
+            <option class="option" value="Highest price">Rating</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="products-heading uppercase featured__heading tracking-widest">A<span class="underline">ll Product</span>s
+    </h1>
+    <div class="products__container grid grid-cols-3 gap-10">
+      <div class="products__one-product">
+        <img class="products__image" src="https://via.placeholder.com/500x300" alt="Product">
+        <h2 class="products__title uppercase">Product Title</h2>
+        <p class="products__price">Price</p>
+        <button class="button button__small button__gray uppercase"> <a href="details.html">View Product</a></button>
+      </div>
+      <div class="products__one-product">
+        <img class="products__image" src="https://via.placeholder.com/500x300" alt="Product">
+        <h2 class="products__title uppercase">Product Title</h2>
+        <p class="products__price">Price</p>
+        <button class="button button__small button__gray uppercase"> <a href="details.html">View Product</a></button>
+      </div>
+      <div class="products__one-product">
+        <img class="products__image" src="https://via.placeholder.com/500x300" alt="Product">
+        <h2 class="products__title uppercase">Product Title</h2>
+        <p class="products__price">Price</p>
+        <button class="button button__small button__gray uppercase"> <a href="details.html">View Product</a></button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <ul class="footer__ul">
+      <li class="footer__headings uppercase">Made by:</li>
+      <li class="footer__small-text py-1">Sander Trollebø Byrkjeland</li>
+      <li class="footer__small-text">Semester Project for <a href="https://www.noroff.no/" target="_blank">Noroff</a>
+      </li>
+    </ul>
+    <ul class="footer__ul">
+      <li class="footer__headings uppercase">Made Possible By:</li>
+      <li class="footer__small-text py-1"><a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a></li>
+      <li class="footer__small-text py-1"><a href="https://strapi.io/" target="_blank">Strapi.io</a></li>
+      <li class="footer__small-text"> <a href="https://cloudinary.com/" target="_blank">Cloudinary.com</a></li>
+    </ul>
+    <ul class="footer__ul">
+      <li class="footer__headings uppercase">Photos From:</li>
+      <li class="footer__small-text py-1"><a href="https://www.pexels.com/" target="_blank">Pexels.com</a></li>
+      <li class="footer__small-text"><a href="https://unsplash.com/" target="_blank">Unsplash.com</a></li>
+    </ul>
+    <ul class="footer__ul">
+      <li class="footer__headings uppercase">Follow Current Level on Social Media</li>
+      <li class="footer__social">
+        <i class="fab fa-snapchat-square"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram"></i>
+      </li>
+    </ul>
+  </footer>
+  <script src="js/script.js" type="module"></script>
+</body>
+
+</html>
