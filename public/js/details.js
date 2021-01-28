@@ -16,10 +16,10 @@ menu();
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-const productsUrl = baseUrl + "products/" + id;
-if (!id) {
-    document.location.href = "index.html";
-}
+const productsUrl = baseUrl + "details/" + id;
+// if (!id) {
+//   document.location.href = "index.html";
+// }
 (function () {
     return __awaiter(this, void 0, void 0, function* () {
         try {

@@ -12,11 +12,11 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const productsUrl = baseUrl + "products/" + id;
+const productsUrl = baseUrl + "details/" + id;
 
-if (!id) {
-  document.location.href = "index.html";
-}
+// if (!id) {
+//   document.location.href = "index.html";
+// }
 
 (async function () {
   try {
@@ -26,7 +26,7 @@ if (!id) {
 
     document.title = details.title;
 
-    const container = document.querySelector(".details-container");
+    const container = document.querySelector(".details-container") as HTMLDivElement;
 
     container.innerHTML = `
   <div class="details__image">
@@ -64,7 +64,7 @@ if (!id) {
     </div>
   </div>`;
 
-    const addToCartBtn = document.querySelector("#addToCart");
+    const addToCartBtn = document.querySelector("#addToCart") as HTMLButtonElement;
     addToCartBtn.addEventListener("click", addToCart);
   } catch (error) {
     displayMessage("error", error, ".details-container");

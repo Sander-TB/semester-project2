@@ -3,12 +3,12 @@ import { saveToken, saveUser } from "../../utils/storage.js";
 import { baseUrl } from "../../settings/api.js";
 import menu from "./menu.js"
 
-const adminForm = document.querySelector("#adminLogin") as HTMLElement;
-const email = document.querySelector("#email") as HTMLElement;
+const adminForm = document.querySelector("#adminLogin") as HTMLFormElement;
+const email = document.querySelector("#email") as HTMLInputElement;
 const emailError = document.querySelector("#emailError") as HTMLElement;
-const password = document.querySelector("#password") as HTMLElement;
+const password = document.querySelector("#password") as HTMLInputElement;
 const passwordError = document.querySelector("#passwordError") as HTMLElement;
-const message = document.querySelector(".message__container") as HTMLElement;
+const message = document.querySelector(".message__container") as HTMLInputElement;
 
 menu();
 

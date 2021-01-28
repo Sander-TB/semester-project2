@@ -1,13 +1,13 @@
 const slides = document.querySelectorAll(".hero__slide");
-const next = document.querySelector("#next");
-const prev = document.querySelector("#prev");
-const auto = false;
-const intervalTime = 5000;
-let slideInterval;
+const next = document.querySelector("#next") as Element;
+const prev = document.querySelector("#prev") as Element;
+const auto = false as boolean;
+const intervalTime = 5000 as number;
+let slideInterval : number;
 
 const nextSlide = () => {
   //Get current class
-  const current = document.querySelector(".current");
+  const current = document.querySelector(".current") as Element;
   //Remove current class
   current.classList.remove("current");
   //Check for next slide
@@ -24,7 +24,7 @@ const nextSlide = () => {
 
 const prevSlide = () => {
   //Get current class
-  const current = document.querySelector(".current");
+  const current = document.querySelector(".current") as Element;
   //Remove current class
   current.classList.remove("current");
   //Check for prev slide

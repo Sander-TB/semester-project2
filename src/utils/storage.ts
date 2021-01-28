@@ -1,7 +1,7 @@
-const tokenKey = "token";
-const userKey = "user";
+const tokenKey = "token" as string;
+const userKey = "user" as string;
 
-export function saveToken(token) {
+export function saveToken(token : string) {
   saveToStorage(tokenKey, token);
 }
 
@@ -9,7 +9,7 @@ export function getToken() {
   return getFromStorage(tokenKey);
 }
 
-export function saveUser(user) {
+export function saveUser(user : string) {
   saveToStorage(userKey, user);
 }
 
@@ -22,11 +22,11 @@ export function getUserName() {
   return null;
 }
 
-function saveToStorage(key, value) {
+function saveToStorage(key : string, value: string) {
   localStorage.setItem(key, JSON.stringify(value));
 }
 
-function getFromStorage(key) {
+function getFromStorage(key: string) {
   const value = localStorage.getItem(key);
 
   if (!value) {

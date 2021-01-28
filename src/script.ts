@@ -10,7 +10,7 @@ const productsUrl = baseUrl + "products";
 menu();
 
 (async function () {
-  const container = document.querySelector(".products__container");
+  const container = document.querySelector(".products__container") as HTMLDivElement;
 
   try {
     const response = await fetch(productsUrl);
@@ -18,7 +18,14 @@ menu();
 
     container.innerHTML = "";
 
-    json.forEach(function (product) {
+    interface Product {
+      image_url: string;
+      title: string;
+      price: string;
+      id: number;
+    }
+
+    json.forEach(function (product : Product) {
       if (username) {
         container.innerHTML += `
       <div class="products__one-product">

@@ -76,7 +76,7 @@ export async function addProduct(
     rating: rating,
   });
 
-  const token = getToken();
+  const token = getToken() as string;
 
   const options = {
     method: "POST",

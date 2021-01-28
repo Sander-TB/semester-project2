@@ -12,8 +12,8 @@ export function addToCart() {
     }
     function cartItems() {
         let itemNumbers = localStorage.getItem("item");
-        itemNumbers = parseInt(itemNumbers);
-        if (itemNumbers) {
+        const parsed = parseInt(itemNumbers);
+        if (parsed) {
             localStorage.setItem("item", itemNumbers + 1);
         }
         else {

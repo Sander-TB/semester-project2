@@ -1,7 +1,7 @@
 import { baseUrl } from "./settings/api.js";
 import displayMessage from "./components/common/displayMessage.js";
 import menu from "./components/common/menu.js";
-import { getToken } from "../js/utils/storage.js";
+import { getToken } from "../src/utils/storage.js";
 import deleteProduct from "./components/products/deleteProduct.js";
 
 menu();
@@ -16,15 +16,15 @@ if (!id) {
 
 const productUrl = baseUrl + "products/" + id;
 
-const message = document.querySelector(".message");
-const form = document.querySelector("form");
-const title = document.querySelector("#title");
-const brand = document.querySelector("#brand");
-const price = document.querySelector("#price");
-const description = document.querySelector("#description");
-const rating = document.querySelector("#rating");
-const imageUrl = document.querySelector("#imgUrl");
-const idInput = document.querySelector("#id");
+const message = document.querySelector(".message") as HTMLInputElement;
+const form = document.querySelector("form") as HTMLFormElement;
+const title = document.querySelector("#title") as HTMLInputElement;
+const brand = document.querySelector("#brand") as HTMLInputElement;
+const price = document.querySelector("#price") as HTMLInputElement;
+const description = document.querySelector("#description") as HTMLInputElement;
+const rating = document.querySelector("#rating") as HTMLInputElement;
+const imageUrl = document.querySelector("#imgUrl") as HTMLInputElement;
+const idInput = document.querySelector("#id") as HTMLInputElement;
 
 (async function () {
   try {
@@ -47,26 +47,26 @@ const idInput = document.querySelector("#id");
 
 form.addEventListener("submit", submitForm);
 
-function submitForm(event) {
+function submitForm(event : Event) {
   event.preventDefault();
 
   message.innerHTML = "";
 
-  const titleValue = title.value.trim();
-  const brandValue = brand.value.trim();
-  const priceValue = parseFloat(price.value);
-  const descriptionValue = description.value;
-  const imgUrlValue = imgUrl.value.trim();
-  const ratingValue = parseFloat(rating.value);
-  const idValue = idInput.value;
+  const titleValue = title.value.trim() as string;
+  const brandValue = brand.value.trim() as string;
+  const priceValue = parseFloat(price.value) as number;
+  const descriptionValue = description.value as string;
+  const imgUrlValue = imageUrl.value.trim() as string;
+  const ratingValue = parseFloat(rating.value) as number;
+  const idValue = idInput.value as string;
 
   if (
     titleValue.length === 0 ||
     brandValue.length === 0 ||
-    priceValue.length === 0 ||
+    priceValue === 0 ||
     descriptionValue.length === 0 ||
     imgUrlValue.length === 0 ||
-    ratingValue.length === 0
+    ratingValue === 0
   ) {
     displayMessage("warning", "Please fill out all fields", ".message");
   }
@@ -91,13 +91,13 @@ function submitForm(event) {
 }
 
 async function updateProduct(
-  title,
-  brand,
-  price,
-  description,
-  image_url,
-  rating,
-  id
+  title : string,
+  brand : string,
+  price : number,
+  description : string,
+  image_url : string,
+  rating : number,
+  id : string
 ) {
   const url = baseUrl + "products/" + id;
   const data = JSON.stringify({

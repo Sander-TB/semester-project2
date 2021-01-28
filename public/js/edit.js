@@ -10,7 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 import { baseUrl } from "./settings/api.js";
 import displayMessage from "./components/common/displayMessage.js";
 import menu from "./components/common/menu.js";
-import { getToken } from "../js/utils/storage.js";
+import { getToken } from "../src/utils/storage.js";
 import deleteProduct from "./components/products/deleteProduct.js";
 menu();
 const queryString = document.location.search;
@@ -56,15 +56,15 @@ function submitForm(event) {
     const brandValue = brand.value.trim();
     const priceValue = parseFloat(price.value);
     const descriptionValue = description.value;
-    const imgUrlValue = imgUrl.value.trim();
+    const imgUrlValue = imageUrl.value.trim();
     const ratingValue = parseFloat(rating.value);
     const idValue = idInput.value;
     if (titleValue.length === 0 ||
         brandValue.length === 0 ||
-        priceValue.length === 0 ||
+        priceValue === 0 ||
         descriptionValue.length === 0 ||
         imgUrlValue.length === 0 ||
-        ratingValue.length === 0) {
+        ratingValue === 0) {
         displayMessage("warning", "Please fill out all fields", ".message");
     }
     if (isNaN(priceValue) || isNaN(ratingValue)) {

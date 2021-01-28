@@ -2,7 +2,7 @@ import { getUserName } from "../../utils/storage.js";
 import logout from "./logout.js";
 
 export default function menu() {
-  const container = document.querySelector(".nav__navigation");
+  const container = document.querySelector(".nav__navigation") as HTMLElement;
 
   const username = getUserName();
 

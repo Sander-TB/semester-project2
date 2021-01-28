@@ -1,8 +1,8 @@
 import { baseUrl } from "../../settings/api.js";
 import { getToken } from "../../utils/storage.js";
 
-export default function deleteProduct(id) {
-  const deleteBtn = document.querySelector("#delete");
+export default function deleteProduct(id : number) {
+  const deleteBtn = document.querySelector("#delete") as HTMLElement;
 
   deleteBtn.onclick = async function () {
     console.log(id);

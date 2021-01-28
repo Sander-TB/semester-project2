@@ -1,16 +1,16 @@
-const customerForm = document.querySelector("#customerLogin") as HTMLElement;
-const firstName = document.querySelector("#firstName") as HTMLElement;
+const customerForm = document.querySelector("#customerLogin") as HTMLFormElement;
+const firstName = document.querySelector("#firstName") as HTMLInputElement;
 const firstNameError = document.querySelector("#firstNameError") as HTMLElement;
-const lastName = document.querySelector("#lastName") as HTMLElement;
+const lastName = document.querySelector("#lastName") as HTMLInputElement;
 const lastNameError = document.querySelector("#lastNameError") as HTMLElement;
-const email = document.querySelector("#email") as HTMLElement;
+const email = document.querySelector("#email") as HTMLInputElement;
 const emailError = document.querySelector("#emailError") as HTMLElement;
-const password = document.querySelector("#password") as HTMLElement;
+const password = document.querySelector("#password") as HTMLInputElement;
 const passwordError = document.querySelector("#passwordError") as HTMLElement;
 
 
 
-function validateForm() {
+function validateForm(event: Event) {
   event.preventDefault();
 
   if (checkLength(firstName.value, 1) === true) {

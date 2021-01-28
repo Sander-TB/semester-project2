@@ -1,7 +1,7 @@
 import { clearStorage } from "../../utils/storage.js";
 
 export default function logout() {
-  const button = document.querySelector("#logout");
+  const button = document.querySelector("#logout") as HTMLElement;
 
   if (button) {
     button.onclick = function () {

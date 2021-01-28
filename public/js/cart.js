@@ -3,13 +3,11 @@ menu();
 const cartRow = document.querySelectorAll(".in-cart__outer-box");
 document.querySelectorAll("#remove").forEach((button) => {
     button.addEventListener("click", (event) => {
-        console.log("removing");
-        const removed = event.target;
-        removed.parentElement.parentElement.remove();
+        const target = event.target;
+        target.parentElement.parentElement.remove();
         UpdateCartTotal();
     });
 });
 function UpdateCartTotal() {
     console.log("updating total");
 }
-// function checkout() {}

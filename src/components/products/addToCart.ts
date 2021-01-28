@@ -18,11 +18,11 @@ export function addToCart() {
   }
 
   function cartItems() {
-    let itemNumbers = localStorage.getItem("item");
+    let itemNumbers = localStorage.getItem("item") as string;
 
-    itemNumbers = parseInt(itemNumbers);
+    const parsed = parseInt(itemNumbers);
 
-    if (itemNumbers) {
+    if (parsed) {
       localStorage.setItem("item", itemNumbers + 1);
     } else {
       localStorage.setItem("item", 1);

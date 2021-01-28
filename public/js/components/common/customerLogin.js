@@ -8,7 +8,7 @@ const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const password = document.querySelector("#password");
 const passwordError = document.querySelector("#passwordError");
-function validateForm() {
+function validateForm(event) {
     event.preventDefault();
     if (checkLength(firstName.value, 1) === true) {
         firstNameError.style.display = "none";
